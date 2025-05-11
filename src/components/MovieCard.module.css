@@ -1,0 +1,104 @@
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .posterContainer {
+    height: 0;
+    padding-bottom: 150%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .title {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .description {
+    margin: 0 0 12px 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    flex-grow: 1;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .sessions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+    margin-top: auto;
+  }
+  
+  .session {
+    padding: 8px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .sessionDate {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sessionTime {
+    color: #1a73e8;
+  }
+  
+  .sessionHall {
+    font-size: 0.7rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: row;
+    }
+    .posterContainer {
+      height: auto;
+      width: 120px;
+      padding-bottom: 0;
+    }
+  }
