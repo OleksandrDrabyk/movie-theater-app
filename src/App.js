@@ -18,7 +18,7 @@ function App() {
           </Routes>
         </main>
         <footer className={styles.footer}>
-          <p>© 2023 Кінотеатр. Всі права захищені.</p>
+          <p>© 2025 Кінотеатр. Всі права захищені.</p>
         </footer>
       </div>
     </Router>
