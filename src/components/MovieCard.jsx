@@ -1,11 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './MovieCard.module.css';
 
 const MovieCard = ({ movie }) => {
+  const navigate = useNavigate();
+
   // Функція для форматування дати
   const formatDate = (dateString) => {
     const options = { day: 'numeric', month: 'long' };
     return new Date(dateString).toLocaleDateString('uk-UA', options);
+  };
+
+  const handleBookClick = () => {
+    navigate(`/booking/${movie.id}`);
   };
 
   return (
@@ -37,6 +44,12 @@ const MovieCard = ({ movie }) => {
             </div>
           ))}
         </div>
+        <button 
+          className={styles.bookButton}
+          onClick={handleBookClick}
+        >
+          Забронювати квитки
+        </button>
       </div>
     </div>
   );

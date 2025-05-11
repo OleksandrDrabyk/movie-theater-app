@@ -91,6 +91,20 @@
     font-size: 0.7rem;
     color: #666;
   }
+  .bookButton {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bookButton:hover {
+    background-color: #0b7dda;
+  }
   
   @media (max-width: 768px) {
     .card {
