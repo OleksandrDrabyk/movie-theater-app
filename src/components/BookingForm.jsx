@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { saveBooking } from '../../services/BookingService';
+import { saveBooking } from '../services/BookingService';
 import { toast } from 'react-toastify';
 import styles from './BookingForm.module.css';
 

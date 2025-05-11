@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import CinemaHall from '../../components/CinemaHall/CinemaHall';
-import BookingForm from '../../components/BookingForm/BookingForm';
+import BookingForm from '../../components/BookingForm';
 import { movies } from '../../data/movies';
 import { getBookedSeats } from '../../services/BookingService';
 import styles from './Booking.module.css';
