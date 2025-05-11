@@ -67,6 +67,17 @@
   .booked {
     background-color: #f44336;
   }
+  .booked-seat {
+    background-color: #f44336;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .seat {
+      width: 25px;
+      height: 25px;
+    }
+  }
   
   @media (max-width: 768px) {
     .hall {
